@@ -1,0 +1,8 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: nginx-ui
+    ports:
+      - "8050:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
